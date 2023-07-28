@@ -31,7 +31,7 @@
 }
 
 img{
-max-width: 50%;
+max-width: 30%;
 display: block;
 
 }
@@ -62,7 +62,8 @@ body{
 
 .main-grid{
     display: grid;
-    grid-template-columns: 15rem auto ;
+    grid-template-columns: auto auto ;
+    gap: clamp(3rem , 15vw, 10rem);
     grid-auto-flow: dense;
     align-items: center;
     min-height: 100vh;
@@ -82,11 +83,53 @@ aside{
     grid-auto-flow: column;
 }
 .icon-list{
+    padding: 0;
     margin:0;
-    margin-left: 10px;
+    margin-left: clamp(5rem , 10vw, 10rem);
     height: 100%;
-    border-left: 1px solid orange;
+    border-left: 1px solid var(--clr-primary-300);
     list-style: none;
     display: grid;
     gap: 3rem;
+    align-content: center;
+}
+.icon-list > li{
+    position: relative;
+    padding-left: 3rem;
+}
+
+.icon-list > li::after{
+
+    --size: .5rem;
+
+
+
+    position: absolute;
+    left:calc(var(--size)/ -2);
+    border-radius: 50%;
+    top: 0;
+    content: "";
+    width: var(--size);
+    aspect-ratio: 1;
+    background-color: var(--clr-neutral-100);
+    background: var(--clr-neutral-100);
+    outline: 1rem solid var(--clr-primary-400);
+}
+
+.eyebrow{
+    color: var(--clr-secondary-400);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+}
+.page-title
+{
+    font-size: var(--fs-700);
+    text-transform: uppercase;
+    margin: 0;
+}
+.intro{
+    font-size: var(--fs-500);
 }
