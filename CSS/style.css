@@ -59,3 +59,27 @@ body{
     width: 1px;
     
 }
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 15rem auto ;
+    grid-auto-flow: dense;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+main{
+    grid-column: 2;
+}
+aside{
+    grid-column: 1;
+}
+
+.job-experience
+{
+    display: grid;
+    grid-auto-flow: column;
+}
+.icon-list{
+    
+}
