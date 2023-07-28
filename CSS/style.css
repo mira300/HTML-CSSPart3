@@ -31,7 +31,7 @@
 }
 
 img{
-max-width: 8%;
+max-width: 50%;
 display: block;
 
 }
@@ -73,6 +73,7 @@ main{
 }
 aside{
     grid-column: 1;
+    align-self: stretch;
 }
 
 .job-experience
@@ -81,5 +82,11 @@ aside{
     grid-auto-flow: column;
 }
 .icon-list{
-    
+    margin:0;
+    margin-left: 10px;
+    height: 100%;
+    border-left: 1px solid orange;
+    list-style: none;
+    display: grid;
+    gap: 3rem;
 }
