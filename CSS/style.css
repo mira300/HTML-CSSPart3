@@ -148,3 +148,17 @@ aside{
 .job *{
     margin: 0;
 }
+
+.job-info{
+display: flex;
+justify-content: space-between;
+align-items: end;
+margin-bottom: 1rem;
+
+}
+.year{
+    color: var(--clr-accent-400);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.2rem;
+}
